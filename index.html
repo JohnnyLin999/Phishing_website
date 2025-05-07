@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>凱基銀行 – 個人網路銀行</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="凱基銀行 Logo" />
+        </div>
+    </header>
+
+    <!-- Main 兩欄 -->
+    <div class="main">
+        <!-- 左欄：登入卡片 -->
+        <div class="login-card">
+            <h2>個人網路銀行</h2>
+            <form>
+                <div class="form-group">
+                    <label>身分證字號</label>
+                    <div class="input-wrapper no-btn">
+                        <input type="text" placeholder="請輸入身分證字號" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>使用者代號</label>
+                    <div class="input-wrapper">
+                        <input id="user-id" type="password" placeholder="請輸入6-12碼使用者代號" />
+                        <button type="button" class="toggle-password" data-target="user-id"></button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>網路銀行密碼</label>
+                    <div class="input-wrapper">
+                        <input id="password" type="password" placeholder="請輸入密碼" />
+                        <button type="button" class="toggle-password" data-target="password"></button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>圖形驗證碼</label>
+                    <div class="input-wrapper captcha-wrapper">
+                        <input id="captcha-input" type="text" placeholder="請輸入驗證碼" />
+                        <div id="captcha-code" class="captcha-code">701084</div>
+                        <button type="button" id="refresh-captcha" class="refresh-captcha"></button>
+                    </div>
+                </div>
+                <button type="submit" class="btn-login">登入</button>
+                <p class="warning">避免詐騙犯罪發生，請勿聽從他人指示從事交易</p>
+            </form>
+            <div class="under-links">
+                <a href="#">申請方式</a>
+                <a href="#">設定/忘記密碼</a>
+                <a href="#">ENGLISH</a>
+            </div>
+        </div>
+
+        <!-- 右欄：整張大圖 -->
+        <div class="promo">
+            <img src="promo.jpg" alt="宣傳圖" />
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="#">無障礙友善專區</a>
+            <a href="#">隱私權保護聲明</a>
+            <a href="#">網路安全</a>
+            <a href="#">消費者保護</a>
+            <a href="#">晶片金融卡/讀卡機元件下載</a>
+        </nav>
+        <p class="copyright">© 凱基商業銀行</p>
+        <!-- 恢復原本的 img 元素 -->
+        <img src="cdic-logo.jpg" alt="參加存款保險金融機構" class="insurance-logo" />
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
