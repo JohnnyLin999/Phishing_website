@@ -28,6 +28,7 @@ body {
     display: flex;
     margin: 32px auto;
     width: 1533px;
+    /* 固定總寬 */
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
